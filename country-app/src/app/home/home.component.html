@@ -1,0 +1,25 @@
+<h1>Welcome to {{title}}</h1>
+<!-- 
+<div *ngIf="buttonSort" class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Success
+</div> -->
+<!--  -->
+<nav>
+  <a (click)="toggle()" *ngIf="isSortedCountries" routerLink="/sorted-countries">Show List of sorted Countries</a>
+  <a (click)="toggle()" *ngIf="!isSortedCountries" routerLink="/all-countries">Show List of all Countries</a>
+</nav>
+
+
+<!-- <div> 
+  <button (click)="toggle2()">Go Back to Homepage</button>
+  <button (click)="toggle1()">List of all Countries</button> 
+</div>
+
+<div *ngIf="buttonStatus==='SORT'">
+    <app-sorted-countries></app-sorted-countries>
+</div> 
+
+<div *ngIf="buttonStatus==='ALL'">
+  <app-all-countries></app-all-countries>
+</div>   -->
